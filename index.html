@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SlideShow/Carousel</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="image-container">
+      <img src="https://www.tutorialslogic.com/images/tutorials/angular/ti-angular.jpg" class="image fade" />
+    </div>
+    <div class="image-container">
+      <img src="https://www.tutorialslogic.com/images/tutorials/node-js/ti-node-js.jpg" class="image fade" />
+    </div>
+    <div class="image-container">
+      <img src="https://www.tutorialslogic.com/images/tutorials/javascript/ti-javascript.jpg" class="image fade" />
+    </div>
+
+    <a class="prev" onclick="newSlide(-1)">&#10094;</a>
+    <a class="next" onclick="newSlide(1)">&#10095;</a>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
